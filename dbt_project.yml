@@ -1,0 +1,30 @@
+name: ecommerce_dbt_snowflake
+version: "1.0.0"
+config-version: 2
+
+profile: ecommerce_dbt_snowflake
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+analysis-paths: ["analyses"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - target
+  - dbt_packages
+
+models:
+  ecommerce_dbt_snowflake:
+    staging:
+      +materialized: view
+      +schema: STAGING
+    marts:
+      +materialized: table
+      +schema: MARTS
+
+seeds:
+  ecommerce_dbt_snowflake:
+    +schema: RAW
+    +quote_columns: false

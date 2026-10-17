@@ -1,0 +1,14 @@
+payment_id,order_id,paid_at,amount,status,payment_method
+5001,1001,2026-09-01 09:05:00,100.00,success,card
+5002,1001,2026-09-01 09:10:00,149.80,success,bank_transfer
+5003,1002,2026-09-01 10:05:00,159.00, SUCCESS ,card
+5004,1003,,89.70,pending,bank_transfer
+5005,1004,,199.80,failed,card
+5006,1005,2026-09-03 09:05:00,100.00,success,card
+5007,1005,2026-09-03 09:10:00,119.70,success,bank_transfer
+5008,1006,2026-09-03 10:05:00,129.80,success,card
+5009,1007,2026-09-04 09:05:00,50.00,success,bank_transfer
+5010,1008,,79.90,failed,card
+5011,1008,2026-09-04 10:10:00,79.90,success,card
+5012,1009,2026-09-05 09:05:00,258.90,success,bank_transfer
+5013,1010,2026-09-05 10:05:00,59.80,success,card

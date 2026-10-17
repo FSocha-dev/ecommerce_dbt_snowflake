@@ -1,0 +1,9 @@
+customer_id,first_name,last_name,email,created_at
+1, Anna ,Kowalska,ANNA.KOWALSKA@example.com,2026-08-01 09:00:00
+2,Piotr,Nowak,piotr.nowak@example.com,2026-08-02 10:00:00
+3,Maria,Wisniewska,maria.wisniewska@example.com,2026-08-03 11:00:00
+4,Jan,Wojcik,jan.wojcik@example.com,2026-08-04 12:00:00
+5,Ewa,Kaminska, EWA.KAMINSKA@example.com ,2026-08-05 13:00:00
+6,Tomasz,Lewandowski,tomasz.lewandowski@example.com,2026-08-06 14:00:00
+7,Alicja,Zielinska,alicja.zielinska@example.com,2026-08-07 15:00:00
+8,Pawel,Szymanski,pawel.szymanski@example.com,2026-08-08 16:00:00

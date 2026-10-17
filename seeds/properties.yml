@@ -1,0 +1,34 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    description: Syntetyczni klienci; jeden wiersz oznacza jednego klienta.
+    config:
+      column_types:
+        created_at: timestamp_ntz
+
+  - name: raw_products
+    description: Syntetyczne produkty; catalog_price to aktualna cena katalogowa w PLN.
+    config:
+      column_types:
+        catalog_price: number(12,2)
+
+  - name: raw_orders
+    description: Syntetyczne zamówienia; order_total to suma wartości pozycji w PLN.
+    config:
+      column_types:
+        ordered_at: timestamp_ntz
+        order_total: number(12,2)
+
+  - name: raw_order_items
+    description: Pozycje zamówień; unit_price to cena jednostkowa w momencie zakupu w PLN.
+    config:
+      column_types:
+        unit_price: number(12,2)
+
+  - name: raw_payments
+    description: Próby płatności; tylko status success oznacza skutecznie otrzymaną kwotę.
+    config:
+      column_types:
+        paid_at: timestamp_ntz
+        amount: number(12,2)
